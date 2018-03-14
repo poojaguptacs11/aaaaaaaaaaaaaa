@@ -1,0 +1,223 @@
+/** Social Sharing
+-------------------------------------------------------------- */
+.tm-sharing-icon {
+	background: #fff;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	vertical-align: middle;
+	border: 1px solid #eee;
+}
+.tm-sharing-circle .tm-sharing-icon {
+	border-radius: 100%;
+}
+.tm-sharing-color .share-digg,
+.share-digg:hover {
+	border: 1px solid #005be2;
+	background: #005be2;
+	color: #fff;
+	cursor: pointer;
+}
+.tm-sharing-color .share-facebook,
+.share-facebook:hover {
+	border: 1px solid #3b5998;
+	background: #3b5998;
+	color: #fff;
+	cursor: pointer;
+}
+.tm-sharing-color .share-twitter,
+.share-twitter:hover {
+	border: 1px solid #4099FF;
+	background: #4099FF;
+	color: #fff;
+	cursor: pointer;
+}
+.tm-sharing-color .share-pinterest-p,
+.share-pinterest-p:hover {
+	border: 1px solid #C92228;
+	background: #C92228;
+	color: #fff;
+	cursor: pointer;
+}
+.tm-sharing-color .share-google-plus,
+.share-google-plus:hover {
+	border: 1px solid #db4437;
+	background: #db4437;
+	color: #fff;
+	cursor: pointer;
+}
+.tm-sharing-color .share-linkedin,
+.share-linkedin:hover {
+	border: 1px solid #007bb6;
+	background: #007bb6;
+	color: #fff;
+	cursor: pointer;
+}
+.tm-sharing-color .share-tumblr,
+.share-tumblr:hover {
+	border: 1px solid #35465c;
+	background: #35465c;
+	color: #fff;
+	cursor: pointer;
+}
+.tm-sharing-color .share-vk,
+.share-vk:hover {
+	border: 1px solid #45668e;
+	background: #45668e;
+	color: #fff;
+	cursor: pointer;
+}
+.tm-sharing-color .share-reddit-alien,
+.share-reddit-alien:hover {
+	border: 1px solid #ff4500;
+	background: #ff4500;
+	color: #fff;
+	cursor: pointer;
+}
+.tm-sharing-color .share-envelope,
+.share-envelope:hover {
+	color: #111;
+	cursor: pointer;
+}
+.tm-sharing-color .share-stumbleupon,
+.share-stumbleupon:hover {
+	border: 1px solid #eb4924;
+	background: #eb4924;
+	color: #fff;
+	cursor: pointer;
+}
+.tm-sharing-color .share-xing,
+.share-xing:hover {
+	border: 1px solid #cfdc00;
+	background: #cfdc00;
+	color: #fff;
+	cursor: pointer;
+}
+#tm-sharing-expand:hover {
+	color: #fff;
+	background: #333;
+	border: 1px solid #333;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#tm-sharing-expand:hover {
+	cursor: pointer;
+}
+.themesmatic-share-content {
+	padding-left: 0px;
+}
+ul.themesmatic-sharing {
+	padding-left: 0px;
+	margin: 0px;
+}
+ul.themesmatic-sharing li {
+	display: inline-block;
+}
+ul.themesmatic-sharing li {
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: 2px;
+	color: #555;
+	font-weight: 600;
+	margin-top: 10px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+ul.themesmatic-sharing li i.fa {
+	vertical-align: middle;
+}
+ul.themesmatic-sharing li:last-child {
+	margin-right: 0px;
+}
+.tm-sharing-wrapper {
+	display: none;
+	height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+}
+.tm-sharing-wrapper.display {
+	display: block;
+}
+.themesmatic-popup-content {
+	position: relative;
+    top: 100px;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+@media screen and (max-width: 961px) {
+	.themesmatic-popup-content {
+		position: relative;
+	    top: 100px;
+	    width: 100%;
+	    text-align: center;
+	    margin: 0 auto;
+	    padding: 2%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.themesmatic-sharing-url {
+		display: none;
+	}
+}
+.themesmatic-popup-content .themesmatic-sharing {
+	padding: 50px 0;
+}
+.themesmatic-popup-content h5.themesmatic-sharing-popup-title {
+	color: #fff;
+}
+.themesmatic-popup-content .themesmatic-sharing-url {
+	color: #dddddd;
+}
+.themesmatic-attr {
+	color: #fff;
+	font-size: 0px;
+	position: absolute;
+	bottom: 0;
+    right: 2%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.themesmatic-attr a {
+	border: none;
+	box-shadow: none;
+	text-decoration: none;
+}
+.themesmatic-attr a img {
+	box-shadow: none;
+}
+i.tm-close-sharing {
+	position: absolute;
+	color: #fff;
+	font-size: 30px;
+	top: 5%;
+	right: 5%;
+}
+i.tm-close-sharing:hover {
+	cursor: pointer;
+}
+.themesmatic-sharing-url {
+	font-size: 20px;
+}
+.themesmatic-sharing-url::selection {
+	color: #fff;
+	background: #333;
+}
+.themesmatic-sharing-url::-moz-selection {
+	color: #fff;
+	background: #333;
+}

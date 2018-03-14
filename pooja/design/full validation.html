@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<script>
+	function validationform(myform)
+	{
+		if(myform.firstname.value=="")
+		{
+			alert('Please enter your name!');
+			myform.firstname.focus();
+			return false;
+		}
+		else if (myform.lastname.value=="") 
+		{
+			alert('please enter last  name!');
+			myform.lastname.focus();
+			return false;
+		}
+		else if(myform.username.value=="") 
+		{
+			alert('please enter username  name!');
+			myform.username.focus();
+			return false;
+
+		}
+		else if(myform.password.value=="")
+		{
+			alert('please enter your password!')
+			myform.password.focus();
+			return false;
+		}
+		else if(myform.address.value=="") 
+		{
+          alert('please enter your address!');
+          myform.address.focus();
+          return false;
+		}
+		else if(myform.pincode.value=="")
+		{
+			alert('please enter your pincode!');
+			myform.pincode.focus();
+			return false;
+		}
+		else if(myform.email_id.value=="")
+		{
+			alert('please enter your email id!');
+			myform.email_id.focus();
+			return false;
+		}
+		else if(myform.gender.value=="" || myform.gender.value=="")
+		{
+			alert('please select your gender!');
+			myform.gender.focus();
+			return false;  
+		}
+		else if(myform.checkbox.value=="" ) 
+		{
+			alert('please check your  box!')
+			myform.checkbox.focus();
+			return false;
+			
+		}
+		else if(myform.radio.value=="" ) 
+		{
+			alert('please select your  box!')
+			myform.select.focus();
+			return false;
+			
+		}
+          
+		return true;
+		
+	}
+</script>
+<body bgcolor="pink">
+	<fieldset>
+		<center>
+		<div>
+	<form name="myform" method="post" onsubmit="return validationform(this);">
+     <div>
+     	<b>FirstName:<input type="text" name="firstname" id="firstname" class="" size="30"></b>
+     </div><br>
+     <div>
+     	<b>LastName:<input type="text" name="lastname" id="fastname" size="30"></b>
+     </div><br>
+     <div>
+     	<b>Username:<input type="text" name="username" id="username" size="30"></b>
+     </div><br>
+     <div>
+     	<b>password:<input type="password" name="password" id="password" size="30"></b>
+     </div><br>    
+     <div>
+     	<b>Address:<input type="text" name="address" id="address" size="30"></b>
+     </div><br> 
+     <div>
+       <b>Pincode:<input type="text" name="pincode" id="pincode" size="30"></b>
+     </div><br>
+     <div>
+     	<b>Email Id:<input type="text" name="email_id" id="email id" size="30"></b>
+     </div> <br>
+     	<div>
+     		<b>Date of Birth:</b>	
+     						
+     		   <input type ="date" name="date" value="yyyy">
+     		</div></br>
+     		 <div>
+     <b>Gander:</b><input type="radio" name="gender" value="male">Male
+     	<input type="radio" name="gender" value="female">Female
+     </div></br>
+
+     		<div>
+
+     		<b>Teacher's Name:</b>	<select>
+     				<option>Teacher</option><option>Sanjay</option>
+     			<option>Abhishek</option><option>Shubham</option>
+     			<option>Naveen</option><option>Abhinaw</option>
+     			<option>Ravi</option><option>Ritesh</option>
+     			<option>Rahul</option><option>Piyush</option>
+     			</select>
+     			&
+     		<b>Subject's Name:</b>	<select>
+     				<option>subjects</option>
+     				<option>Database</option><option>Autometa</option>
+     			<option>webTech</option><option>Enterpreneur</option>
+     			<option>Mathmatics1</option><option>Mathmatics2</option>
+     			<option>Sofwaretesting</option><option>Concurrent</option>
+     			<option>Electrical</option><option>Mechanics</option>
+     			</select>
+     		</div><br>
+     		<div>
+     			<b>Check it:</b>
+     			<input type="checkbox" name="checkbox" id="checkbox"><input type="checkbox" name="checkbox" id="checkbox">
+     			<input type="checkbox" name="checkbox" id="checkbox"><input type="checkbox" name="checkbox" id="checkbox">
+     			<input type="checkbox" name="checkbox" id="checkbox"><input type="checkbox" name="checkbox" id="checkbox">
+     		</div><br>
+     		<div>
+     			<b>Select it:</b>
+     			<input type="radio" name="select" id="select"><input type="radio" name="Select" id="select">
+     			<input type="radio" name="select" id="select"><input type="radio" name="select" id="select">
+     			<input type="radio" name="select" id="select"><input type="radio" name="select" id="select">
+     		</div>
+     		<div>
+     			<input type="submit" name="submit" value="submit">
+     			<input type="reset" name="reset" value="reset">						
+     		</div> 
+	</form></div>
+</center>
+</fieldset>
+</body>
+</html> 

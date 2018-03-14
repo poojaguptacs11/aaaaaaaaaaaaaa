@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validation form</title>
+		<script>  
+function validatiomform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;
+var confirm=document.myform.confirm.value; 
+var confirmation=document.myform.confirmation.value; 
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false; 
+  }
+  else if(confirm == password) {
+  	alert("confirm must be match from password");
+  	return false;
+  	 
+  } 
+}  
+</script>
+</head>
+<body bgcolor="green">
+  	<form name="myform" method="post" onsubmit="return validatiomform();" >
+  		<div style="border:3px solid #ccc;">
+  			<div>
+  			UserName:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" id="name" > 
+  		    </div>
+  		    <div>
+  			 Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password" id="password">
+  			</div>
+  			<div>
+  			    Confirm Password:<input type="password" name="confirm" id="confirm" required>
+  			</div>
+  			<div>
+  				<label for="option button confirmation privacy">option button confirmation privacy</label>l
+  				 <input type="checkbox" name="option button confirmation privacy" id="confirmation" value="confirmation" required>
+  		
+  			</div>
+  			<div>
+  				<input type="submit" name="submit" value="submit">
+  				<input type="reset" name="submit" value="reset">
+  			</div>
+  		</div>
+
+</body>
+</html>
