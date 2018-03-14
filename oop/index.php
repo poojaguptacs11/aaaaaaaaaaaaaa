@@ -55,6 +55,49 @@
             
         </tbody>
     </table>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <?php
+            if(isset($_REQUEST['m']))
+            {
+                if($_REQUEST['m']=="yes")
+                {
+                    ?>
+                    <div class="alert alert-success fade in">
+                        <a href="#" class="close" data-dismiss="alert">&times;</a>
+                        <strong>Success!</strong> You have registerd successfully.
+                    </div>
+                    <?php
+                }
+                else if($_REQUEST['m']=="fail")
+                {
+                    ?>
+                    <div class="alert alert-danger fade in">
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    <strong>Error!</strong> Something wrong!try again.
+                </div>
+                    <?php
+                }
+            }
+            ?>
+            <form id="userform" action="upload.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="userfile">File Upload</label>
+                    <input type="File" name="userfile" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primay">Upload</button>
+            </form>
+        </div>
+    </div>
 </div>
 </body>
 </html>                            

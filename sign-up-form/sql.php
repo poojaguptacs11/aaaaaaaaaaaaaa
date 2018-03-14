@@ -1,1 +1,2 @@
-                      ".$_FILES['ico_doc']['name'].",
+<?php                      ".$_FILES['ico_doc']['name'].",
+?>

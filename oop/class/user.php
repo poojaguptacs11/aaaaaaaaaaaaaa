@@ -1,11 +1,13 @@
 <?php
-include('./config/connect.php');
+include('config/connect.php');
 class User
 {
-	public function saveUser()
+	public function saveUser($file,$user,$pass)
 	{
 		global $dbo;
-		
+		//echo "insert into  test_user set file='".$file."',username='".$user."',pasword='".$pass."'";
+		$saveU=$dbo->prepare("insert into  test_user set file='".$file."',username='".$user."',pasword='".$pass."'");
+		return $saveU->execute();
 	}
 	public function userList()
 	{
