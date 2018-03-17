@@ -1,0 +1,20 @@
+#login_form
+{
+	border: 1px solid ;
+	background-color: #7FFFD4;
+	padding: 5%;
+   
+}
+#reg_form
+{
+	background-color: lightgreen;
+	border: 1px solid;
+	padding: 5%;
+}
+#pro
+{
+	background-color: #FFE4C4;
+	border: 2px solid;
+	padding: 5%;
+
+}

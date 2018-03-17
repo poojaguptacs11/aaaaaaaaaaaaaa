@@ -1,0 +1,20 @@
+<?php
+include('class/user.php');
+if(isset($_POST['usignup']))
+{
+	 $uname=trim($_POST['username']);
+	 $password=trim($_POST['password']);
+	 $email=trim($_POST['email']);
+     $mob_no=trim($_POST['mob_no']);
+	$insertRes=$obj->saveU($uname,$password,$email,$mob_no);
+	if($insertRes>0)
+	{
+		header('Location:login.php');
+	}
+	else
+	{
+		header('Location:signup.php');
+	}
+}
+
+?>

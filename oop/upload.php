@@ -23,5 +23,6 @@ if($file_error==0)
 			header('Location:index.php?m=fail');
 		}
 	}
+
 }
 ?>

@@ -1,7 +1,7 @@
 <?php
 Class Student 
 {
-//	private $name,$contact_no, $adds;
+   private $name,$contact_no, $adds;
 	function getDetails($n,$c,$a)
 	{
 		$this->name=$n; 
@@ -19,4 +19,4 @@ $stu1->getDetails("pooja gupta", '7754040833',"allahabad");
 $stu1-> showDetail();
 //$stu2->getDetails("abhija", '7754040833',"allahabad");
 //$stu2--> showDetail();
- 
+ ?>
